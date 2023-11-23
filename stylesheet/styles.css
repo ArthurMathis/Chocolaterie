@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+:root {
+  --main_color: rgb(33, 17, 17);
+  --second_color: rgb(144, 80, 80);
+  --third_color: #fff;
+  --tall_typo: 4.75rem;
+  --medium_typo: 3rem;
+  --semi_medium_tpo: 1.35rem;
+  --normal_typo: 1rem;
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+h1, h2 {
+  font-family: "Abril FatFace", cursive;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: calc(100% - 50px);
+  height: 100px;
+  background-color: var(--main_color);
+  box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.3);
+}
+header img {
+  height: 100%;
+}
+header a {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: var(--third_color);
+  transform: none;
+  will-change: transform;
+  transition: transform 0.25s;
+}
+header a:is(:hover, :focus) {
+  transform: scale(1.05);
+}
+
+#Accueil {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: calc(100% - 50px);
+  height: 80vh;
+  padding: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-image: url("../src/acceuil_image.jpeg");
+}
+#Accueil h1 {
+  font-size: var(--tall_typo);
+  color: var(--third_color);
+  font-weight: 100;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 15% 0;
+}
+.services .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services .items p {
+  font-weight: 600;
+}
+.services .items img {
+  width: 60px;
+}
+
+body > article {
+  padding: 2% 5%;
+}
+body > article p:first-child {
+  font-size: var(--semi_medium_tpo);
+  font-weight: 600;
+}
+body > article p:nth-child(2) {
+  font-size: var(--normal_typo);
+  font-weight: 800;
+  color: var(--second_color);
+}
+
+.selection,
+.Ventes {
+  width: 90%;
+  padding: 0 5%;
+}
+.selection h2,
+.Ventes h2 {
+  font-size: var(--medium_typo);
+}
+.selection > div,
+.Ventes > div {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+.selection > div article,
+.Ventes > div article {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+  flex: 1;
+  min-width: 480px;
+  max-width: 100%;
+  height: 500px;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  background-size: cover;
+}
+.selection > div article h3, .selection > div article p,
+.Ventes > div article h3,
+.Ventes > div article p {
+  color: var(--third_color);
+  margin: 0;
+  transform: translateX(-15%) translateY(-10%);
+}
+
+.selection > div article:first-child {
+  background-image: url("../src/nos_meilleurs_ventes/download-1.webp");
+}
+.selection > div article:nth-child(2) {
+  background-image: url("../src/nos_meilleurs_ventes/download-2.webp");
+}
+.selection > div article:nth-child(3) {
+  background-image: url("../src/nos_meilleurs_ventes/download-3.jpeg");
+}
+.selection > div article:nth-child(4) {
+  background-image: url("../src/nos_meilleurs_ventes/download-4.webp");
+}
+
+.Ventes > div article:first-child {
+  background-image: url("../src/nos_chocolats/chocoo 1.webp");
+}
+.Ventes > div article:nth-child(2) {
+  background-image: url("../src/nos_chocolats/chocoo 2.jpeg");
+}
+.Ventes > div article:nth-child(3) {
+  background-image: url("../src/nos_chocolats/chocoo 3.webp");
+}
+.Ventes > div article:nth-child(4) {
+  background-image: url("../src/nos_chocolats/chocoo 4.webp");
+}
+.Ventes > div article:nth-child(5) {
+  background-image: url("../src/nos_chocolats/chocoo 5.webp");
+}
+.Ventes > div article:nth-child(6) {
+  background-image: url("../src/nos_chocolats/chocoo 6.webp");
+}
+
+footer {
+  font-family: Montserrat;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 100px;
+  font-weight: 600;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */
