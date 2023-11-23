@@ -116,21 +116,6 @@ header{
     }
 }
 
-body > article{
-    padding: 2% 5%;
-
-    & p:first-child{
-        font-size: var(--semi_medium_tpo);
-        font-weight: 600;
-    }
-
-    & p:nth-child(2){
-        font-size: var(--normal_typo);
-        font-weight: 800;
-        color: var(--second_color);
-    }
-}
-
 .selection, 
 .Ventes{
     width: 90%;
